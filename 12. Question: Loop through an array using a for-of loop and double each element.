@@ -1,0 +1,12 @@
+function doubleArray(arr) {
+    let result = [];
+
+    for (let value of arr) {
+        result[result.length] = value * 2;
+    }
+
+    return result;
+}
+console.log(doubleArray([1, 2, 3, 4])); 
+  
+  Output: [2, 4, 6, 8]
