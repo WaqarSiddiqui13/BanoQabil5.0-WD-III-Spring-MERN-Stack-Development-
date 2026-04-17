@@ -1,0 +1,14 @@
+function calculateAverage(arr) {
+    let sum = 0;
+
+    for (let num of arr) {
+        sum += num;
+    }
+
+    let average = sum / arr.length;
+    return average;
+}
+console.log(calculateAverage([10, 20, 30, 40])); 
+
+
+Output: 25
