@@ -1,0 +1,1 @@
+let result = (score >= 80) ? "Pass" : "Fail";
