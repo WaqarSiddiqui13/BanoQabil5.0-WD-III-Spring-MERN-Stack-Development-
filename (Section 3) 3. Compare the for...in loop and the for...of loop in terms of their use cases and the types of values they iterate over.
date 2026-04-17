@@ -1,0 +1,11 @@
+for...in Loop
+Used for objects
+Iterates over keys (property names)
+
+
+let person = { name: "waqar", age: 25 };
+
+for (let key in person) {
+    console.log(key);        // name, age
+    console.log(person[key]); // waqar, 25
+}
