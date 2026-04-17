@@ -1,0 +1,13 @@
+function printObject(obj) {
+    for (let key in obj) {
+        console.log(key + ": " + obj[key]);
+    }
+}
+
+let person = {
+    name: "Ali",
+    age: 25,
+    city: "Lahore"
+};
+
+printObject(person);
