@@ -1,0 +1,25 @@
+Normally, accessing a nested property can cause an error if something in the chain is missing.
+?. checks if the value exists before moving forward.
+If it doesn’t exist → it returns undefined instead of crashing.
+
+**Example without optional chaining**
+let user = {};
+console.log(user.address.city); 
+
+**Example with optional chaining**
+let user = {};
+console.log(user.address?.city); 
+
+**Accessing nested properties**
+let user = {
+    name: "Ali",
+    address: {
+        city: "Karachi"
+    }
+};
+
+console.log(user.address?.city);  
+console.log(user.contact?.phone);  
+
+Output: Karachi
+Output: undefined
