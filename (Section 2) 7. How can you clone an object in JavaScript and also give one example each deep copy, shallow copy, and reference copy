@@ -1,0 +1,10 @@
+**Reference Copy**
+let obj1 = { name: "waqar" };
+let obj2 = obj1;
+
+obj2.name = "Ahmed";
+
+console.log(obj1.name); 
+
+
+OUTPUT:    Ahmed (changed)
