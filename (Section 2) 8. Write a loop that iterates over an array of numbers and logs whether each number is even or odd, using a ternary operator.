@@ -1,0 +1,6 @@
+function checkEvenOddArray(arr) {
+    for (let num of arr) {
+        console.log(num % 2 === 0 ? num + " is Even" : num + " is Odd");
+    }
+}
+checkEvenOddArray([1, 2, 3, 4, 5]);
