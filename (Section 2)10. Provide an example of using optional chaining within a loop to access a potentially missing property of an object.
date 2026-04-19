@@ -1,0 +1,9 @@
+let users = [
+    { name: "waqar", address: { city: "Karachi" } },
+    { name: "Ahmed" }, // no address
+    { name: "Siddiqui", address: { city: "Lahore" } }
+];
+
+for (let user of users) {
+    console.log(user.address?.city);
+}
