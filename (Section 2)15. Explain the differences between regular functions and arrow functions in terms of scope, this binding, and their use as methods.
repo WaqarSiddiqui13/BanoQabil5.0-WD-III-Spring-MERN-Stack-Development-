@@ -1,0 +1,47 @@
+1. this Binding
+      Regular Function
+let obj = {
+    name: "waqar",
+    show: function() {
+        console.log(this.name);
+    }
+};
+obj.show(); 
+
+       Arrow Function
+let obj = {
+    name: "waqar",
+    show: () => {
+        console.log(this.name);
+    }
+};
+obj.show();
+
+2. Scope
+  Regular Function
+Has its own scope
+Creates its own this, arguments
+ 
+  Arrow Function
+Uses parent scope
+Does NOT have its own this, arguments
+
+3. Use as Methods
+      Regular Function
+
+      let person = {
+    name: "waqar",
+    greet: function() {
+        console.log("Hello " + this.name);
+    }
+};
+
+      Arrow Function
+
+      let person = {
+    name: "waqar",
+    greet: () => {
+        console.log("Hello " + this.name); // wrong this
+    }
+};
+
