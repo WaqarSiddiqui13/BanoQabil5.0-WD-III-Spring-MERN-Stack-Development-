@@ -1,0 +1,14 @@
+function sumEvenNumbers(arr) {
+    return arr.reduce(function(total, num) {
+        if (num % 2 === 0) {
+            return total + num;
+        } else {
+            return total;
+        }
+    }, 0);
+}
+
+
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6])); 
+  
+   Output: 12
