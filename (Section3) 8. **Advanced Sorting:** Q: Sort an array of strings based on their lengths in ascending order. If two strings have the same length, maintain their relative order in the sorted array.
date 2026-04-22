@@ -1,0 +1,11 @@
+function sortByLength(arr) {
+    return arr.sort(function(a, b) {
+        return a.length - b.length;
+    });
+}
+
+let words = ["apple", "cat", "banana", "dog", "grape"];
+console.log(sortByLength(words));
+
+
+Output: ["cat", "dog", "apple", "grape", "banana"]
