@@ -1,0 +1,12 @@
+function sumNestedArray(arr) {
+    return arr
+        .flat() // flatten the array
+        .reduce(function(sum, num) {
+            return sum + num;
+        }, 0);
+}
+
+let numbers = [[1, 2], [3, 4], [5, 6]];
+console.log(sumNestedArray(numbers)); 
+
+   Output: 21
