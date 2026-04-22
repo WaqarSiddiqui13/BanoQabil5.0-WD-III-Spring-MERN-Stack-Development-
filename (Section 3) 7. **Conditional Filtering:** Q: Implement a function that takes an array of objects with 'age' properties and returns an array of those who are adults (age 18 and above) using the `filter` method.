@@ -1,0 +1,14 @@
+function getAdults(arr) {
+    return arr.filter(function(person) {
+        return person.age >= 18;
+    });
+}
+
+// Example
+let people = [
+    { name: "waqar", age: 17 },
+    { name: "ahmed", age: 22 },
+    { name: "siddiqui", age: 18 }
+];
+
+console.log(getAdults(people));
