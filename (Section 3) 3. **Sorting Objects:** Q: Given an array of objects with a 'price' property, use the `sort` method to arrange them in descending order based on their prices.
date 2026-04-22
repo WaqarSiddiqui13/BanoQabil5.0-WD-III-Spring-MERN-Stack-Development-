@@ -1,0 +1,14 @@
+function sortByPriceDesc(arr) {
+    return arr.sort(function(a, b) {
+        return b.price - a.price;
+    });
+}
+
+
+let products = [
+    { name: "Item A", price: 100 },
+    { name: "Item B", price: 50 },
+    { name: "Item C", price: 150 }
+];
+
+console.log(sortByPriceDesc(products));
