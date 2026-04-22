@@ -1,0 +1,15 @@
+function findWithDefault(arr, targetId) {
+    let result = arr.find(function(obj) {
+        return obj.id === targetId;
+    });
+
+    return result ? result : { id: targetId, status: "not found" };
+}
+
+let items = [
+    { id: 1, status: "pending" },
+    { id: 2, status: "completed" }
+];
+
+console.log(findWithDefault(items, 2));    // Found object
+console.log(findWithDefault(items, 3));    // Default object
