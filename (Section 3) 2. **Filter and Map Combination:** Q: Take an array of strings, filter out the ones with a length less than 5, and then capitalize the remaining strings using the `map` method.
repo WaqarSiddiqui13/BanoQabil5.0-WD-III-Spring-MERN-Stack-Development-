@@ -1,0 +1,13 @@
+function processStrings(arr) {
+    return arr
+        .filter(function(str) {
+            return str.length >= 5;
+        })
+        .map(function(str) {
+            return str.toUpperCase();
+        });
+}
+console.log(processStrings(["apple", "cat", "banana", "dog", "grape"]));
+
+
+ Output: ["APPLE", "BANANA", "GRAPE"]
