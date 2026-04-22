@@ -1,0 +1,9 @@
+let car = {
+    make: "Toyota",
+    model: "Corolla",
+    startEngine: function() {
+        console.log("Engine started!");
+    }
+};
+// Call the method
+car.startEngine();
