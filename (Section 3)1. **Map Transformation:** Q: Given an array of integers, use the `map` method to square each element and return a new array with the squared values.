@@ -1,0 +1,8 @@
+function squareArray(arr) {
+    return arr.map(function(num) {
+        return num * num;
+    });
+}
+console.log(squareArray([1, 2, 3, 4])); 
+
+ Output: [1, 4, 9, 16]
