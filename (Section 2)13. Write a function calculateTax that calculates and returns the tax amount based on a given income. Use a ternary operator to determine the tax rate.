@@ -1,0 +1,13 @@
+function calculateTax(income) {
+    let taxRate = income > 50000 ? 0.20 : 0.10;
+    let tax = income * taxRate;
+
+    return tax;
+}
+
+// Example
+console.log(calculateTax(60000)); Output: 12000
+console.log(calculateTax(30000)); 
+
+Output: 12000
+Output: 3000
