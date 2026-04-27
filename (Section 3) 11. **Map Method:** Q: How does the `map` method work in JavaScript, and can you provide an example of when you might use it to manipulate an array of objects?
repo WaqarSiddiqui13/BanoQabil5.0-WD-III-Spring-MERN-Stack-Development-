@@ -1,0 +1,14 @@
+let users = [
+    { name: "Ahmed", age: 20 },
+    { name: "waqar", age: 25 }
+];
+
+let updatedUsers = users.map(function(user) {
+    return {
+        name: user.name,
+        age: user.age,
+        status: "active"
+    };
+});
+
+console.log(updatedUsers);
