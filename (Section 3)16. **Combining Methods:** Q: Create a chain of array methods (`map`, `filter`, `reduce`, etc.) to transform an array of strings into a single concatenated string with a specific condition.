@@ -1,0 +1,14 @@
+function processStrings(arr) {
+    return arr
+        .filter(function(str) {
+            return str.length > 3; // condition
+        })
+        .map(function(str) {
+            return str.toUpperCase(); // transform
+        })
+        .reduce(function(result, str) {
+            return result + str + " "; // combine
+        }, "")
+        .trim(); // remove extra space
+}
+console.log(processStrings(["cat", "apple", "dog", "banana"]));
