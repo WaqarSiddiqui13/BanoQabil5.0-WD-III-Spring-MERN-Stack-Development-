@@ -1,0 +1,9 @@
+let numbers = [1, 2, 3, 4];
+
+function square(num) {
+    return num * num;
+}
+
+let result = numbers.map(square);
+
+console.log(result); 
