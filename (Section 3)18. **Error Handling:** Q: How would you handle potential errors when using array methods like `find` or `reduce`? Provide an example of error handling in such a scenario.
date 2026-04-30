@@ -1,0 +1,12 @@
+let users = [
+    { id: 1, name: "waqar" },
+    { id: 2, name: "ahmed" }
+];
+
+let user = users.find(u => u.id === 3);
+
+if (user) {
+    console.log(user.name);
+} else {
+    console.log("User not found");
+}
